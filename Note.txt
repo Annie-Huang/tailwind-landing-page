@@ -31,9 +31,13 @@ space-x-6:
       margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
     }
 
-md:flex:
+md:block
+md:flex
     @media (min-width: 768px) {
-      .md\:flex {               <--------- I don't actually know what this means.
+      .md\:block {
+        display: block;
+      }
+      .md\:flex {               <--------- '\' is the escape key
         display: flex;
       }
     }
@@ -45,10 +49,11 @@ relative
 
 container
 
-mx-auto:
+mx-auto
     Margin left and right auto.
 
-hidden md:flex:
+hidden md:flex
+hidden md:block
     Initially hidden and only show when it get into md size
 
 hover:text-darkGrayishBlue

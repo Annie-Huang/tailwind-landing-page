@@ -30,3 +30,19 @@ space-x-6:
        margin-right: calc(1.5rem * var(--tw-space-x-reverse));
       margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
     }
+
+md:flex:
+    @media (min-width: 768px) {
+      .md\:flex {               <--------- I don't actually know what this means.
+        display: flex;
+      }
+    }
+
+
+Some of the useful feature:
+===============================
+mx-auto:
+    Margin left and right auto.
+
+hidden md:flex:
+    Initially hidden and only show when it get into md size

@@ -575,6 +575,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .items-center {
   align-items: center;
 }
@@ -600,4 +604,10 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
 }

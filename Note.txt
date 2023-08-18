@@ -82,3 +82,7 @@ Disadvantage of using Tailwind:
 - Repetitive setting for the same component:
           <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
           <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+
+- Need to constantly override:
+    <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline"></a>
+    Where I can just list padding, instead of p-3, and then override by px-6 and then override by pt-2

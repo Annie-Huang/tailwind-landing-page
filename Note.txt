@@ -58,6 +58,9 @@ hidden md:block
 
 hover:text-darkGrayishBlue
 
+w-1/2
+    Half the wide of the container
+
 
 
 Disadvantage of using Tailwind:

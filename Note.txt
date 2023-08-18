@@ -6,3 +6,5 @@ https://github.com/Annie-Huang/tailwind-landing-page
 https://tailwindcss.com/docs/installation
 
 -----------------------------------------------------------------------
+
+PS C:\react\tailwind-landing-page> npm i -D tailwindcss

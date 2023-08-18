@@ -1,0 +1,8 @@
+Tailwind Crash Course | Project From Scratch (https://www.youtube.com/watch?v=dFgzHOX84xQ)
+
+https://github.com/bradtraversy/tailwind-landing-page
+https://github.com/Annie-Huang/tailwind-landing-page
+
+https://tailwindcss.com/docs/installation
+
+-----------------------------------------------------------------------

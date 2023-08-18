@@ -13,3 +13,4 @@ PS C:\react\tailwind-landing-page> npx tailwindcss init     << Create teh tailwi
 
 
 PS C:\react\tailwind-landing-page> npm run watch
+PS C:\react\tailwind-landing-page> npm run start

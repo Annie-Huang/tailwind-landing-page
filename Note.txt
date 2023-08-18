@@ -7,6 +7,8 @@ https://tailwindcss.com/docs/installation
 
 https://tailwindcss.com/docs/configuration
 https://tailwindcss.com/docs/screens
+https://tailwindcss.com/docs/customizing-colors
+https://tailwindcss.com/docs/customizing-colors#using-custom-colors
 
 -----------------------------------------------------------------------
 

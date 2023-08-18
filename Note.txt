@@ -5,6 +5,9 @@ https://github.com/Annie-Huang/tailwind-landing-page
 
 https://tailwindcss.com/docs/installation
 
+https://tailwindcss.com/docs/configuration
+https://tailwindcss.com/docs/screens
+
 -----------------------------------------------------------------------
 
 (Follow the steps in https://tailwindcss.com/docs/installation)

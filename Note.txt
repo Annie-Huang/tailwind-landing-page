@@ -110,13 +110,15 @@ Disadvantage of using Tailwind:
 - Need to constantly override:
     <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline"></a>
     Where I can just list padding, instead of p-3, and then override by px-6 and then override by pt-2
+    <div class='container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0'></div>
+    Cannot do one padding and instead doing, px-6 and py-24
 
 - No Chrome dev tool support if you misspell something:
      if you have:
          <div class="flex flex-col item-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">, instead of
          <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
      Chrome dev tool will not tell you that you have mispell items-center to item-center. it will just discard the styling.
-     For things that is similar, e.g. vertical baseline or not baseline, it's hard to see the different visually.
+     For things that is similar, e.g. vertical baseline or middle, it's hard to see the different visually.
 
 
 - Have to be mobile first.

@@ -61,6 +61,10 @@ hover:text-darkGrayishBlue
 w-1/2
     Half the wide of the container
 
+rounded-l-full:
+    Left side border radius rounded
+
+bg-transparent
 
 
 Disadvantage of using Tailwind:
@@ -90,6 +94,9 @@ Disadvantage of using Tailwind:
 - Repetitive setting for the same component:
           <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
           <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+
+- Repetitive setting for different screen size:
+          <div class='flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row'></div>
 
 - Need to constantly override:
     <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline"></a>

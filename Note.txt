@@ -66,6 +66,9 @@ rounded-l-full:
 
 bg-transparent
 
+text-base
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
 
 Disadvantage of using Tailwind:
 =================================================

@@ -75,6 +75,9 @@ text-center
 -mt-14
      margin-top: -3.5rem;   << Negative value for margin-top
 
+leading-tight
+    All the leading-XX is relative to line-height.
+
 
 Disadvantage of using Tailwind:
 =================================================

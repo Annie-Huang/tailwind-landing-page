@@ -72,6 +72,9 @@ text-base
 
 text-center
 
+-mt-14
+     margin-top: -3.5rem;   << Negative value for margin-top
+     
 
 Disadvantage of using Tailwind:
 =================================================

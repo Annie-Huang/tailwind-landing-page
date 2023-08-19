@@ -74,7 +74,7 @@ text-center
 
 -mt-14
      margin-top: -3.5rem;   << Negative value for margin-top
-     
+
 
 Disadvantage of using Tailwind:
 =================================================
@@ -110,3 +110,10 @@ Disadvantage of using Tailwind:
 - Need to constantly override:
     <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline"></a>
     Where I can just list padding, instead of p-3, and then override by px-6 and then override by pt-2
+
+- No Chrome dev tool support if you mistype something:
+     if you have:
+         <div class="flex flex-col item-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">, instead of
+         <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+     Chrome dev tool will not tell you that you have mispell items-center to item-center. it will just discard the styling.
+     For things that is similar, e.g. vertical baseline or not baseline, it's hard to see the different visually.

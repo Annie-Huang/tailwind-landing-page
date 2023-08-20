@@ -89,6 +89,13 @@ flex-initial
 flex-none
     flex: none;         << to prevent a flex item from growing or shrinking:
 
+drop-shadow-md
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+
+left-6
+right-6
+
+
 
 Disadvantage of using Tailwind:
 =================================================

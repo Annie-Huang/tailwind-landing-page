@@ -10,6 +10,7 @@ https://tailwindcss.com/docs/screens
 https://tailwindcss.com/docs/customizing-colors
 https://tailwindcss.com/docs/customizing-colors#using-custom-colors
 https://tailwindcss.com/docs/space#add-horizontal-space-between-children
+https://tailwindcss.com/docs/flex#flex-1
 
 -----------------------------------------------------------------------
 
@@ -77,6 +78,15 @@ text-center
 
 leading-tight
     All the leading-XX is relative to line-height.
+
+flex-1
+    flex: 1 1 0%;       << allow a flex item to grow and shrink as needed, ignoring its initial size:
+flex-auto
+    flex: 1 1 auto;     << allow a flex item to grow and shrink, taking into account its initial size:
+flex-initial
+    flex: 0 1 auto;     << allow a flex item to shrink but not grow, taking into account its initial size:
+flex-none
+    flex: none;         << to prevent a flex item from growing or shrinking:
 
 
 Disadvantage of using Tailwind:

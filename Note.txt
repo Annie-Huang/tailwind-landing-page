@@ -58,6 +58,7 @@ hidden md:block
     Initially hidden and only show when it get into md size
 
 hover:text-darkGrayishBlue
+focus:outline-none
 
 w-1/2
     Half the wide of the container

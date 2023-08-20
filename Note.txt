@@ -96,7 +96,6 @@ left-6
 right-6
 
 
-
 Disadvantage of using Tailwind:
 =================================================
 - When it goes to grid or flex, the column or row configuration has a lot of boilerplate. e.g.
@@ -141,6 +140,11 @@ Disadvantage of using Tailwind:
      Chrome dev tool will not tell you that you have mispell items-center to item-center. it will just discard the styling.
      For things that is similar, e.g. vertical baseline or middle, it's hard to see the different visually.
 
-
 - Have to be mobile first.
     I generally do mobile first. But I don't strongly against people do desktop first, as long as within the same css file, the approach is consistent.
+
+- Change display value:
+    Because display got different values and they are all one word classname, e.g. block | flex | hidden etc.
+    Therefore if you need to switch them, you will need to add two toggle class in javascript:
+        nav.classList.toggle('flex');
+        nav.classList.toggle('hidden');

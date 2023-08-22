@@ -95,6 +95,44 @@ drop-shadow-md
 left-6
 right-6
 
+-------------------- useful command from C:\react\tailwind-JIT -----------------------
+
+first-letter:font-bold
+first-letter:text-green-500
+
+list-disc marker:text-blue-600
+    Change marker styling.
+
+selection:bg-pink-500
+    Change high line background color when using mouse the high line the text
+
+first-line:font-semibold
+    Change the style of the first line of the <p>
+
+bg-[#f46225]
+text-[#fff6ca]
+    Use specific color code
+
+text-[24px]
+    Use specify size value
+
+bg-[color:var(--primary)]
+    With this added into the input css file:
+    :root {
+      --primary: #1eccac;
+      --leadFont: 1.2rem;
+    }
+    the above will use the color code from custom property
+
+text-[length:var(--leadFont)]
+    With this added into the input css file:
+    :root {
+      --primary: #1eccac;
+      --leadFont: 1.2rem;
+    }
+    the above will use the font size from custom property
+    Anything to do with the size value: em, rem, px, etc, should use length keyword
+
 
 Disadvantage of using Tailwind:
 =================================================

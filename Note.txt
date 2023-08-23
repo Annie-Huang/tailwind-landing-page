@@ -12,6 +12,7 @@ https://tailwindcss.com/docs/customizing-colors#using-custom-colors
 https://tailwindcss.com/docs/space#add-horizontal-space-between-children
 https://tailwindcss.com/docs/flex#flex-1
 
+https://tailwindcss.com/blog/automatic-class-sorting-with-prettier
 -----------------------------------------------------------------------
 
 (Follow the steps in https://tailwindcss.com/docs/installation)
@@ -186,3 +187,17 @@ Disadvantage of using Tailwind:
     Therefore if you need to switch them, you will need to add two toggle class in javascript:
         nav.classList.toggle('flex');
         nav.classList.toggle('hidden');
+
+Plugins:
+=================================================
+https://tailwindcss.com/blog/automatic-class-sorting-with-prettier
+
+If you use tailwind, it's important that you install these plugin.
+    npm install -D prettier prettier-plugin-tailwindcss
+And add into the .prettierrc file:
+    {
+        "plugins": ['prettier-plugin-tailwindcss']
+    }
+this can do Automatic Class Sorting with Prettier.
+    - So its easier to edit when the element has heaps of class.
+    - And it sorted the order as the final css output. e.g. if you have 'pt-2 p-4', it will actually output 'p-4 pt-2' (e.g. padding: 2 4 4 4)

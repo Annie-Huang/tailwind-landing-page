@@ -188,7 +188,15 @@ Disadvantage of using Tailwind:
         nav.classList.toggle('flex');
         nav.classList.toggle('hidden');
 
-Plugins:
+- You don't have control of generated order, for things like:
+    <a href={href} className={`rounded-md bg-${pending ? "gray" : "blue"}-600 px-3.5 py-2.5 text-sm font-semibold ${className}`}>
+        {children}
+    </a>
+
+    You may need extra tools like tailwind-merge (see below) to re-enforce the order.
+
+
+prettier-plugin-tailwindcss
 =================================================
 https://tailwindcss.com/blog/automatic-class-sorting-with-prettier
 
@@ -201,3 +209,29 @@ And add into the .prettierrc file:
 this can do Automatic Class Sorting with Prettier.
     - So its easier to edit when the element has heaps of class.
     - And it sorted the order as the final css output. e.g. if you have 'pt-2 p-4', it will actually output 'p-4 pt-2' (e.g. padding: 2 4 4 4)
+
+
+
+tailwind-merge
+=================================================
+https://github.com/dcastil/tailwind-merge
+
+    <a href={href} className={`rounded-md bg-${pending ? "gray" : "blue"}-600 px-3.5 py-2.5 text-sm font-semibold ${className}`}>
+        {children}
+    </a>
+
+In his case, the dev server and final prod will generate different order. The dev server always put what you added last in the last section so it this is default value.
+however, when it get to prod, if say, ${className} also have a bg color, it will take that one instead because of the order.
+
+import { twMerge } from 'tailwind-merge'
+twMerge('px-2 py-1 bg-red hover:bg-dark-red', 'p-3 bg-[#B91C1C]')
+// → 'hover:bg-dark-red p-3 bg-[#B91C1C]'
+
+So the above will end up like:
+    <a href={href} className={twMerge(
+        `rounded-md px-3.5 py-2.5 text-sm font-semibold`,
+        bg-${pending ? "gray" : "blue"}-600,
+        className
+    )}>
+        {children}
+    </a>
